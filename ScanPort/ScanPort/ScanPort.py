@@ -11,11 +11,12 @@ for porta in portas:
     conexao = cliente.connect_ex((ip, porta)) 
     
   # condição (se conexão for igual a 0 porta aberta se não porta fechada)
-    with open("C:\\Users\\igortomio\\Desktop\\teste.txt", 'a') as f: # inserir caminho onde será salvo o arquivo
+    with open("C:\\teste.txt", 'a') as f: # inserir caminho onde será salvo o arquivo para Windows
+         #open("teste.txt", 'a') as f: # para linux
         if conexao == 0:
             f.write(str(porta)  + " >> porta aberta")
             f.writelines('\n')
-            #print(porta)
+            #print(porta) #caso queira ver em modo verbose
         else:
             f.write(str(porta)  + " >> porta fechada") 
             f.writelines('\n')
