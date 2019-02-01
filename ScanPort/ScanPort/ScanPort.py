@@ -1,7 +1,7 @@
 import socket # importando o módulo 
 
 ip = input("Digite o IP da vitima: ") # entrada para IP
-#ip = "216.58.202.174"
+#ip = "216.58.202.174" # IP do google
 portas = [11,10,21,22,25,3022,80,8080,8090,9043,443,8043,8443,9443,110,985,9080,9090] # lista de portas a serem scaneadas
 
 
