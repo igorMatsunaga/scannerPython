@@ -12,7 +12,7 @@ for porta in portas:
     
   # condição (se conexão for igual a 0 porta aberta se não porta fechada)
     with open("C:\\teste.txt", 'a') as f: # inserir caminho onde será salvo o arquivo para Windows
-         #open("teste.txt", 'a') as f: # para linux
+    #with open("teste.txt", 'a') as f: # para linux
         if conexao == 0:
             f.write(str(porta)  + " >> porta aberta")
             f.writelines('\n')
